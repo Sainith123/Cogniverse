@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import bg from '@/assets/wanderlustbg.webp';
+import bg from '@/assets/home.jpg';
 import BlogFeed from '@/components/blog-feed';
 import PostCard from '@/components/post-card';
 import Post from '@/types/post-type';
@@ -30,21 +30,19 @@ function HomePage() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col px-8 py-8 text-slate-50 md:px-16">
           <div className="flex w-full justify-between">
-            <div className="text-2xl font-semibold">WanderLust</div>
-            <button
+            <div className="text-2xl font-semibold">cogniverse</div>
+            {/* <button
               className="rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25"
               onClick={() => {
                 navigate('/add-blog');
               }}
             >
               Create post
-            </button>
+            </button> */}
           </div>
           <div className="mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50">
-            <h1 className="text-2xl font-bold md:text-4xl">Journey Beyond Horizons</h1>
-            <p className="my-4 md:text-xl">
-              Dive into the world of travel with stories that transport you to far-off lands.
-              Adventure awaits around every corner. It's time to explore the world!
+            <h1 className="text-2xl font-bold md:text-4xl">The integration of Virtual Reality (VR) into the medical industry</h1>
+            <p className="my-4 md:text-xl">This union between VR and medicine presents a multifaceted revolution, redefining traditional approaches and fostering groundbreaking advancements.
             </p>
             <div className="text-xl font-semibold">Let's go!</div>
           </div>
